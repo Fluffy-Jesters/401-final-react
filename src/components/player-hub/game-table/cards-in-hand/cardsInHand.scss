@@ -1,29 +1,24 @@
-// .cards-in-hand-grid-container {
-//   display: grid;
 
-// }
 .cards-in-hand-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  border: 1px solid black;
-  // grid-auto-rows:inherit;
-  // gap: 10px;
-  align-items:center;
-  height:100%;
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 50%;
+    border: 1px solid red;
+  }
+  .card {
+    border: none;
+    align-items: center;
+    background-color: transparent;
+  }
 }
+
+
 ul {
   list-style: none;
-  img {
-    // width:7vw;
-    // height:auto;
-
-    // max-height: 120px;
-    }
 }
 .zoom {
     transition: transform .2s;
-    margin: 0 auto;
   }
   
   .zoom:hover {
