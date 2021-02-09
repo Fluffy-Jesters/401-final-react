@@ -2,7 +2,6 @@ import React from 'react';
 import {useSelector, Provider} from 'react-redux';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from '../src/components/footer/footer'
 import './app.scss'
 import Landing from './components/landing-page/landingPage.js';
 import Game from './components/player-hub/game-table/gameTable.js';
@@ -14,11 +13,11 @@ import store from './store/store.js';
 
 function App () {
   const user = useSelector( state => state.user);
-  // console.log(user);
+
 
 
   return (
-    <>
+    <div className='App'>
     <Provider store={store}>
     <BrowserRouter>
       <div className="apps-background">
@@ -29,11 +28,10 @@ function App () {
             <Route path="/rules" component={Rules}/>
             <Route path="/playerHub" component={PlayerHub}/>
           </Switch>
-        <Footer className="main-footer" />
       </div>
       </BrowserRouter>
       </Provider>  
-    </>
+    </div>
   );
 };
 

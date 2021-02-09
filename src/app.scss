@@ -1,18 +1,7 @@
-html, body {
-  height: 100%;
-  background-color: #FFCC99;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-.apps-background {
-  background-color: #FFCC99;
 
-}
-
-// SUB HEADER
-
-.sub {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+.App{
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
 }

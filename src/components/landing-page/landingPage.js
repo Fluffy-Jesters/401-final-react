@@ -78,7 +78,7 @@ export default function Landing() {
           <button onClick={handleSubmit}>Login</button>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
