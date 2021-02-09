@@ -2,14 +2,10 @@
 .cards-in-hand-grid {
   display: flex;
   flex-direction: row;
-  img {
-    width: 50%;
+  li{
     border: 1px solid red;
-  }
-  .card {
-    border: none;
-    align-items: center;
-    background-color: transparent;
+    width: 10%;
+    padding: 0;
   }
 }
 

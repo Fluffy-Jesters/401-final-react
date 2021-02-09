@@ -4,5 +4,18 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "one two three"
+    "one two three";
+    min-height: 85vh;
+
+    .section-one, .section-two, .section-three {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .playersProgress, .activeCards {
+      border: 1px solid blue;
+      height: 50%;
+      width: 100%;
+    }
 }
