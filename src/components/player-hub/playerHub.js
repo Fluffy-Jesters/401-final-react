@@ -153,7 +153,7 @@ export default function PlayerHub() {
                 <GameTable newState={getNewState} nextTurn={nextTurn} updateState={updateState} roomDetail={roomDetail} localGameState={localGameState}/>
             }
         </div>
-      <Footer/>
+      {/* <Footer/> */}
         </Then>
       </If>
        
