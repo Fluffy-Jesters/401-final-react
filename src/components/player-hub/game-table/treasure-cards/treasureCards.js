@@ -20,14 +20,11 @@ export default function TreasureCards() {
   // console.log(cards);
   return (
     <>
-      <div className="">
       <ul className="treasure-cards-grid" >
             
-              <li className="treasure-deck">Treasure Draw Deck</li>
-              <li className="treasure-deck">Treasure Discard Deck</li>
-            
+              <li className="treasure-deck-draw">Treasure Draw Deck</li>
+              <li className="treasure-deck-discard">Treasure Discard Deck</li>
           </ul> 
-      </div>
     </>
   );
 }

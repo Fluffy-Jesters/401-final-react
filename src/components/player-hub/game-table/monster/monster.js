@@ -47,7 +47,7 @@ export default function Monster(props) {
       }
       <If condition={props.localGameState.whosTurn === userD.user.username}>
         <Then>
-          <button onClick={() => fightMonster()}>Fight monster</button>
+          <button onClick={() => fightMonster()}>Fight</button>
         </Then>
       </If>
       

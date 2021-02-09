@@ -48,11 +48,12 @@ export default function GamePage(props) {
           
           {/* Door cards and treasure cards section */}
           <div className='section-three'>
-            <h3>Card Draw Decks</h3>
             <div className='treasure-cards'>
+              <h3>Treasure Draw Decks</h3>
               <TreasureCards />
             </div>
             <div className='door-cards'>
+              <h3>Door Draw Decks</h3>
               <DoorCards />
             </div>
           </div>

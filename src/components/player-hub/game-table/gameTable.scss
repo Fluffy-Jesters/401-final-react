@@ -12,9 +12,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
     }
     .playersProgress, .activeCards {
       border: 1px solid blue;
+      height: 50%;
+      width: 100%;
+    }
+    .door-cards, .treasure-cards {
+      border: 1px solid green;
       height: 50%;
       width: 100%;
     }
