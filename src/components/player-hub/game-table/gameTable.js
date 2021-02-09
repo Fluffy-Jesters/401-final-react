@@ -25,6 +25,7 @@ export default function GamePage(props) {
         <div className="game-container">
           {/* far left sction of grid container */}
           <div className='section-one'>
+            <h3>Equipped Cards</h3>
             <div className='activeCards'>
               <ActiveCards localGameState={props.localGameState} />
             </div>

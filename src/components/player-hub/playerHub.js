@@ -113,7 +113,6 @@ export default function PlayerHub() {
       <If condition={userD.token}>
         <Then>
         <LoggedInNavbar/>
-        <h1>PlayerHub</h1>
         <div className='playerHub'>
           {
             Object.keys(roomDetail).length === 0 &&

@@ -16,10 +16,10 @@ export default function ActiveCards(props) {
   return (
     <>
       <div className="">
-      <ul className="active-cards-grid" >
+      <ul className="active-cards-container" >
             {
-              equipment.map(card  => <li key={Math.random()}><Card  className="zoom" style={{ width: '100px' }}>
-                <Card.Img variant="top" src={card.image} />
+              equipment.map(card  => <li key={Math.random()}><Card >
+                <Card.Img variant="top" src={card.image} className='equipped-card' />
                 </Card></li>
             )
             }
