@@ -22,26 +22,37 @@ export default function GamePage(props) {
     <>
       <div id="GameTable">
         
-        <div className="grid-container">
+        <div className="game-container">
+          {/* far left sction of grid container */}
+          <div className='section-one'>
+            <div className='activeCards'>
+              <ActiveCards localGameState={props.localGameState} />
+            </div>
+            <div className='playersProgress'>
+              <PlayerProgress localGameState={props.localGameState} currentPlayers={props.roomDetail.currentPlayers} />
+            </div>
+          </div>
 
-          <div className='activeCards'>
-            <ActiveCards localGameState={props.localGameState} />
+          {/* Middle monster and cards in hand */}
+          <div className='section-two'>
+            <div className='monster'>
+              <Monster updateState={props.updateState} newState={props.newState} nextTurn={props.nextTurn} localGameState={props.localGameState} />
+            </div>
+            <div className='cards-in-hand'>
+              <CardsInHand newState={props.newState} updateState={props.updateState} localGameState={props.localGameState} />
+            </div>
           </div>
-          <div className='treasure-cards'>
-            <TreasureCards />
+          
+          {/* Door cards and treasure cards section */}
+          <div className='section-three'>
+            <div className='treasure-cards'>
+              <TreasureCards />
+            </div>
+            <div className='door-cards'>
+              <DoorCards />
+            </div>
           </div>
-          <div className='door-cards'>
-            <DoorCards />
-          </div>
-          <div className='monster'>
-            <Monster updateState={props.updateState} newState={props.newState} nextTurn={props.nextTurn} localGameState={props.localGameState} />
-          </div>
-          <div className='cards-in-hand'>
-            <CardsInHand newState={props.newState} updateState={props.updateState} localGameState={props.localGameState} />
-          </div>
-          <div className='playersProgress'>
-            <PlayerProgress localGameState={props.localGameState} currentPlayers={props.roomDetail.currentPlayers} />
-          </div>
+          
         </div>
       </div>
     </>

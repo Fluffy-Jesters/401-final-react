@@ -8,11 +8,11 @@ function PlayerProgress(props) {
   return (
     <>
       <div id="">
-      {
+      {/* {
       props.currentPlayers.map((player) =>
       <li key={id}>{player.username}</li>
       ) 
-      }
+      } */}
       </div>
     </>
   );

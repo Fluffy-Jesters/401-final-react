@@ -1,7 +1,5 @@
-import {React, useEffect, useState} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import {React,useState} from 'react';
 import Card from 'react-bootstrap/Card';
-import * as actions from '../../../../store/gameTableReducer.js';
 import { pick } from 'lodash';
 import { equipCards } from '../../../../game-objects/game-engine.js'; 
 
@@ -39,7 +37,7 @@ export default function CardsInHand(props) {
             <ul className="cards-in-hand-grid">
 
             {
-              player.cardsInHand.map(card => <li onClick={() => {stateUpdater(player,card)}} key={card.name}><Card className="zoom" style={{ width: '100px' }}>
+              player.cardsInHand.map(card => <li onClick={() => {stateUpdater(player,card)}} key={card.name}><Card className="zoom">
                     <Card.Img variant="top" src={card.image} />
                 </Card></li>
             )
