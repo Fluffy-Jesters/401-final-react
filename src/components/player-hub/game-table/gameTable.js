@@ -25,17 +25,19 @@ export default function GamePage(props) {
         <div className="game-container">
           {/* far left sction of grid container */}
           <div className='section-one'>
-            <h3>Equipped Cards</h3>
             <div className='activeCards'>
+            <h3>Equipped Cards</h3>
               <ActiveCards localGameState={props.localGameState} />
             </div>
             <div className='playersProgress'>
+              <h3>Players</h3>
               <PlayerProgress localGameState={props.localGameState} currentPlayers={props.roomDetail.currentPlayers} />
             </div>
           </div>
 
           {/* Middle monster and cards in hand */}
           <div className='section-two'>
+            <h3>Combat Area</h3>
             <div className='monster'>
               <Monster updateState={props.updateState} newState={props.newState} nextTurn={props.nextTurn} localGameState={props.localGameState} />
             </div>
@@ -46,6 +48,7 @@ export default function GamePage(props) {
           
           {/* Door cards and treasure cards section */}
           <div className='section-three'>
+            <h3>Card Draw Decks</h3>
             <div className='treasure-cards'>
               <TreasureCards />
             </div>

@@ -19,7 +19,7 @@ export default function ActiveCards(props) {
       <ul className="active-cards-container" >
             {
               equipment.map(card  => <li key={Math.random()}><Card >
-                <Card.Img variant="top" src={card.image} className='equipped-card' />
+                <Card.Img variant="top" src={card.image} className='equipped-card zoom' />
                 </Card></li>
             )
             }
