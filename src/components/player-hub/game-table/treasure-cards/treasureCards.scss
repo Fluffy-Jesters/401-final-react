@@ -1,0 +1,16 @@
+.treasure-deck-draw  {
+    background-image: url('https://th.bing.com/th/id/R437fb6d277fa510128c115f11e29e125?rik=XoVs5Jpa85g65Q&riu=http%3a%2f%2fthumbs.dreamstime.com%2ft%2ftreasure-chest-closed-cartoon-style-illustrated-locked-gold-lock-iron-wood-white-background-easy-to-isolate-46165953.jpg&ehk=BHy3srvZ5mUX2gHzPbiE6fXbTPKV7tbQKBnlGcu%2f8KM%3d&risl=&pid=ImgRaw');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.treasure-deck-discard  {
+    background-image: url('https://cdn.friendlystock.com/wp-content/uploads/2018/04/6-garbage-monster-cartoon-clipart.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.treasure-cards-grid {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}

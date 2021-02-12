@@ -1,0 +1,11 @@
+.door-deck-draw, .door-deck-discard {
+    background-image: url('https://content.mycutegraphics.com/graphics/letter/door.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.door-cards-grid {
+    display: flex;
+    flex-direction: row;
+    height: 150px
+}
